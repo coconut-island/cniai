@@ -1,0 +1,14 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=${prefix}
+includedir=@PKG_CONFIG_INCLUDEDIR@
+libdir=@PKG_CONFIG_LIBDIR@
+
+Name: lib@PROJECT_NAME@
+Description: Cniai Cuda Kernel
+URL: https://github.com/coconut-island/CNIAI
+Version: @CNIAI_CUDA_KERNEL_VERSION@
+CFlags: -I${includedir} @PKG_CONFIG_DEFINES@
+Libs: -L${libdir} -lcniai_cuda_kernel
+Requires: @PKG_CONFIG_REQUIRES@
+
+

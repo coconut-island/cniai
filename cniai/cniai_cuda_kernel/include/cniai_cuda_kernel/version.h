@@ -1,0 +1,9 @@
+#pragma once
+
+#define CNIAI_CUDA_KERNEL_VER_MAJOR 1
+#define CNIAI_CUDA_KERNEL_VER_MINOR 0
+#define CNIAI_CUDA_KERNEL_VER_PATCH 0
+
+#define CNIAI_CUDA_KERNEL_VERSION                                              \
+    (CNIAI_CUDA_KERNEL_VER_MAJOR * 10000 + CNIAI_CUDA_KERNEL_VER_MINOR * 100 + \
+     CNIAI_CUDA_KERNEL_VER_PATCH)
